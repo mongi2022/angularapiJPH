@@ -1,0 +1,15 @@
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="text" class="form-control" id="nameInput" placeholder="name@example.com" value={{agent.name}}>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Username</label>
+  <input type="text" class="form-control" id="usernameInput" placeholder="name@example.com" >
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+  <textarea class="form-control" id="emailInput" rows="3"></textarea>
+</div>
+<button (click)="updateAgent()">Update</button>
+
+

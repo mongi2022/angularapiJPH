@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Details</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of agents">
+      <th scope="row">{{a.id}}</th>
+      <td>{{a.name}}</td>
+      <td>{{a.username}}</td>
+      <td>{{a.email}}</td>
+      <td><button routerLink="/agent/details/{{a.id}}">Details</button></td>
+      <td><button routerLink="/agent/update/{{a.id}}">Update</button></td>
+
+    </tr>
+  </tbody>
+</table>
+
+<app-detailsagents></app-detailsagents>
